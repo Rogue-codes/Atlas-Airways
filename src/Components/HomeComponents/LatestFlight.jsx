@@ -1,8 +1,12 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
-
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 function LatestFlight() {
+  useEffect(()=>{
+    Aos.init({duration : 3000})
+  },[])
   const data =[
     {
       id: 1,
@@ -27,7 +31,7 @@ function LatestFlight() {
 
   const [latestFlight, setLatestFlight] = useState("Lagos")
   return (
-    <Container>
+    <Container data-aos="fade-up">
       <h1 className='head'>Latest flight offers from: <span>{latestFlight}</span></h1>
       <select name="" id="" value={latestFlight} onChange={(e)=>setLatestFlight(e.target.value)}>
         <option value="Lagos">Lagos</option>

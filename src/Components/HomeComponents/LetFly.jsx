@@ -1,7 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 function LetFly() {
+    useEffect(()=>{
+        Aos.init({duration : 3000})
+    },[])
   return (
     <Container>
         <div className="toops">
@@ -10,7 +15,7 @@ function LetFly() {
         </div>
         
         <div className="bottomsss">
-            <div className="item1">
+            <div className="item1" data-aos="fade-right">
                 <div className="heder">
                     <img src="/asaba.jpg" alt="" />
                 </div>
@@ -20,7 +25,7 @@ function LetFly() {
                     <button>Book now</button>
                 </div>
             </div>
-            <div className="item2">
+            <div className="item2" data-aos="fade-left">
                 <div className="left">
                     <img src="/zuma.jpg" alt="" />
                 </div>
@@ -31,7 +36,7 @@ function LetFly() {
                 </div>
             </div>
 
-            <div className="item3">
+            <div className="item3" data-aos="fade-left">
                 <div className="left">
                     <img src="/water.webp" alt="" />
                 </div>
@@ -42,7 +47,7 @@ function LetFly() {
                 </div>
             </div>
 
-            <div className="item4">
+            <div className="item4" data-aos="fade-left">
                 <div className="left">
                     <img src="/hotel.webp" alt="" />
                 </div>

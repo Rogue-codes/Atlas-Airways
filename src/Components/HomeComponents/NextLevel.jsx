@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
+import Aos from 'aos'
+import "aos/dist/aos.css"
+
+
 function NextLevel() {
+  useEffect(()=>{
+    Aos.init({duration : 3000})
+  },[])
   return (
     <Container>
       <div className="top">
         <h2>Next level flying....</h2>
       </div>
       <div className="bottom">
-        <div className="card">
+        <div className="card" data-aos="fade-right">
           <div className="tops">
             <img src='/economy.webp' alt="" />
           </div>
@@ -18,7 +25,7 @@ function NextLevel() {
           </div>
         </div>
         
-        <div className="card">
+        <div className="card" data-aos="fade-left">
           <div className="tops">
             <img src='/fisrt.webp' alt="" />
           </div>

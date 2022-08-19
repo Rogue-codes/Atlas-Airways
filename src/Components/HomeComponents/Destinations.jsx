@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
+import Aos from 'aos'
+import "aos/dist/aos.css"
+
 function Destinations() {
+  useEffect(()=>{
+    Aos.init({duration : 3000})
+  },[])
   return (
     <Container>
       <div className="top">
         <h2>Destinations we love....</h2>
       </div>
       <div className="bottom">
-        <div className="card">
+        <div className="card" data-aos="fade-right">
           <div className="tops">
             <img src='/abuja.jpg' alt="" />
           </div>
@@ -18,7 +24,7 @@ function Destinations() {
           </div>
         </div>
         
-        <div className="card">
+        <div className="card" data-aos="zoom-in">
           <div className="tops">
             <img src='/calabar.jpg' alt="" />
           </div>
@@ -29,7 +35,7 @@ function Destinations() {
           </div>
         </div>
 
-        <div className="card">
+        <div className="card" data-aos="fade-left">
           <div className="tops">
             <img src='/enugu.jpg' alt="" />
           </div>

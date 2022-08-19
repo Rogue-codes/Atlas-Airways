@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styled from 'styled-components'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 function NewsLetter() {
+    useEffect(()=>{
+        Aos.init({duration : 3000})
+    },[])
   return (
     <Container>
-        <Card>
+        <Card data-aos="zoom-in">
             <form action="">
                 <h1>Never miss an offer</h1>
                 <p>Subscribe and be the first to receive our exclusive offers.</p> <br />

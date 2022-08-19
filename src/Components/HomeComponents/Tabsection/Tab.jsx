@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { Bag, Mobile, Priviledge, QS } from './tabData'
 import TabOptions from './TabOptions'
+import Aos from 'aos'
+import "aos/dist/aos.css"
+
 const data=[
     {
         id:'priviledge',
@@ -26,6 +29,7 @@ function Tab() {
     const [selected, setSelected] = useState('priviledge')
 
     useEffect(()=>{
+        Aos.init({duration : 3000})
         switch (selected) {
             case 'priviledge':
                 setTabbs(Priviledge)
@@ -48,6 +52,8 @@ function Tab() {
 
          }
     },[selected])
+
+
     
   return (
     <TabComponent>
@@ -62,7 +68,7 @@ function Tab() {
             {Tabss.map((item)=>(<img src={item.img} alt="" />))}
             {
                 Tabss.map((item)=>(
-                    <div className="cardd">
+                    <div className="cardd" data-aos="fade-right">
                         <h2>{item.title}</h2>
                         <p>{item.desc}</p>
                         <button>{item.btn}</button>

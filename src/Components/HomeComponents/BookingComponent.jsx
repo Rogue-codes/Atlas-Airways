@@ -1,8 +1,14 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Button from '../widgets/Button'
+import Aos from 'aos'
+import "aos/dist/aos.css"
 
 function BookingComponent() {
+  useEffect(()=>{
+    Aos.init({duration : 3000})
+  },[])
+
   const btn = [
     {
       id: 'return',
@@ -18,7 +24,7 @@ function BookingComponent() {
     e.preventDefault()
   }
   return (
-    <Book>
+    <Book data-aos="fade-up">
       <form action="" onSubmit={handleSubmit}>
         <div className="firstLayer">
           <select name="" id="">
