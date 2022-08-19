@@ -43,6 +43,9 @@ function Tab() {
                 setTabbs(QS)
                 break 
 
+                default:
+                    setTabbs(Priviledge)
+
          }
     },[selected])
     
