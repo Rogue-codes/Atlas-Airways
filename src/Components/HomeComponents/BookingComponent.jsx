@@ -120,6 +120,9 @@ const Book = styled.div`
   width: 40%;
   height: auto;
   form{
+    @media (max-width:480px) {
+      background: #ffffff96;
+    }
     width: 100%;
     height: auto;
     padding: 2%;
@@ -136,6 +139,7 @@ const Book = styled.div`
       select{
       @media (max-width:480px) {
         font-size: .7rem;
+        height: 5vh;
       }
         width: 45%;
         height: 80%;
@@ -157,6 +161,7 @@ const Book = styled.div`
       .btn{
         @media (max-width:480px) {
           font-size: .7rem;
+          height: 5vh;
         }
         width: 40%;
         border: none;
@@ -179,6 +184,7 @@ const Book = styled.div`
       input{
         @media (max-width:480px) {
           font-size: .7rem;
+          height: 5vh;
         }
         width: 45%;
         height: 80%;
@@ -202,6 +208,7 @@ const Book = styled.div`
       select{
         @media (max-width:480px) {
           font-size: .7rem;
+          height: 5vh;
         }
         width: 45%;
         height: 80%;
@@ -222,6 +229,7 @@ const Book = styled.div`
       select{
         @media (max-width:480px) {
           font-size: .7rem;
+          height: 5vh;
         }
         width: 45%;
         height: 80%;
