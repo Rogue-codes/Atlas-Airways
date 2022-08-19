@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Navlist from './Navlist'
 import { useTransition, animated } from 'react-spring'
 import { Menu } from '@material-ui/icons'
-
+import { Link } from 'react-router-dom'
 
 
 function Nav() {
@@ -87,7 +87,7 @@ const menuTransitions = useTransition(showMenu, {
             (styles, item) => item && <animated.div style={styles} className='animate'>
               {
                 links.map((item)=>(
-                  <a href="#" onClick={()=> setShowMenu(false)}>{item.name}</a>
+                  <Link to='/' onClick={()=> setShowMenu(false)}>{item.name}</Link>
                 ))
               }
             </animated.div>
