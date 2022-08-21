@@ -113,6 +113,7 @@ const NavBar = styled.nav`
   z-index:999999;
   @media (max-width:480px) {
     padding: 2%;
+    height: 10vh;
   }
   .menu{
     @media (max-width:480px) {

@@ -13,6 +13,9 @@ function Landing() {
 export default Landing
 
 const Container = styled.div`
+  @media (max-width:480px) {
+    height: 100vh;
+  }
   width: 100%;
   height: 85vh;
   background: linear-gradient(90deg, #d30d0d65 0%, #d30d0d30 32%, #d30d0d 100%),url(${home});
