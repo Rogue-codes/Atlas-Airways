@@ -2,34 +2,54 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import { ABJ, LAG, PH } from './latestFares'
 
 function LatestFlight() {
   useEffect(()=>{
     Aos.init({duration : 3000})
   },[])
-  const data =[
-    {
-      id: 1,
-      city: 'Asaba',
-      class:'Economy round trip from',
-      price:58000
-    },
-    {
-      id: 1,
-      city: 'Kano',
-      class:'Economy round trip from',
-      price:68890
-    },
-    {
-      id: 1,
-      city: 'Enugu',
-      class:'Economy round trip from',
-      price:128060
-    }
+  // const data =[
+  //   {
+  //     id: 1,
+  //     city: 'Asaba',
+  //     class:'Economy round trip from',
+  //     price:58000
+  //   },
+  //   {
+  //     id: 1,
+  //     city: 'Kano',
+  //     class:'Economy round trip from',
+  //     price:68890
+  //   },
+  //   {
+  //     id: 1,
+  //     city: 'Enugu',
+  //     class:'Economy round trip from',
+  //     price:128060
+  //   }
     
-  ]
+  // ]
 
-  const [latestFlight, setLatestFlight] = useState("Lagos")
+  const [latestFlight, setLatestFlight] = useState("lagos")
+  const [fare, setFare] = useState([])
+  useEffect(()=>{
+    switch (latestFlight){
+      case 'Lagos':
+        setFare(LAG)
+        break
+
+      case 'Abuja':
+        setFare(ABJ)
+        break
+
+      case 'PortHarcourt':
+        setFare(PH)
+        break
+
+      default:
+        setFare(LAG)
+    }
+  },[latestFlight])
   return (
     <Container data-aos="fade-up">
       <h1 className='head'>Latest flight offers from: <span>{latestFlight}</span></h1>
@@ -40,13 +60,13 @@ function LatestFlight() {
       </select>
       <div className="flexBox">
           {
-          data.map((item)=>(
+          fare.map((item)=>(
             <div className="card">
               <div className="top">
-                <p>{item.city}</p>
+                <p>{item.name}</p>
               </div>
               <div className="bottom">
-                <p>{item.class}</p><h1>₦{item.price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h1>
+                <p>{item.class}</p><h1>₦{item.fare.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}</h1>
               </div>
             </div>
           ))

@@ -107,6 +107,10 @@ const NavBar = styled.nav`
   justify-content: space-between;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   align-items: center;
+  position: fixed;
+  top: 0%;
+  background: #fff;
+  z-index:999999;
   @media (max-width:480px) {
     padding: 2%;
   }

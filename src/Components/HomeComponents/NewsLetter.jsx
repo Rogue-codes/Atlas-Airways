@@ -76,6 +76,7 @@ const Card = styled.div`
             @media (max-width:480px) {
                 width: 100%;
                 font-size: .7rem;
+                height: 8vh;
             }
             padding-left: 2%;
             width: 80%;

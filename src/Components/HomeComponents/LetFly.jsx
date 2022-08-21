@@ -21,7 +21,7 @@ function LetFly() {
                 </div>
                 <div className="foter">
                     <h2>Immerse yourself in Eastern culture</h2>
-                    <p>Fly to Enugu, Umuahia, Owerri and many more destinations with our amazing offers.</p>
+                    <p>Fly to <strong>Enugu, Umuahia, Owerri </strong> and many more destinations with our amazing offers.</p>
                     <button>Book now</button>
                 </div>
             </div>
@@ -79,7 +79,7 @@ const Container = styled.div`
         align-items: flex-start;
         padding: 5%;
         color: #d30d0d;
-        font-family: 'Alumni Sans Pinstripe', sans-serif;
+        font-family: 'Spectral', serif;
         h1{
             @media (max-width:480px) {
                 font-size: 2rem;
@@ -139,7 +139,7 @@ const Container = styled.div`
                 button{
                     margin-top: 5%;
                     height: 8vh;
-                    width: 30%;
+                    width: 50%;
                     background: #d30d0d;
                     color: #fff;
                     border: none;

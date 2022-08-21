@@ -27,6 +27,7 @@ const ParentSlide = styled.div`
     height: 10vh;
     position: fixed;
     bottom: 0;
+    z-index:99999;
 `
 const Slide = styled.div`
     width: max-content;
@@ -40,6 +41,9 @@ const Slide = styled.div`
             transform: translateX(0);
         }
         100%{
+            @media (max-width:480px) {
+                transform: translateX(-1900px);
+            }
             transform: translateX(-900px);
         }
     }
