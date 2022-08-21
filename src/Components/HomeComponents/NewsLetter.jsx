@@ -9,7 +9,7 @@ function NewsLetter() {
     },[])
   return (
     <Container>
-        <Card data-aos="zoom-in">
+        <Card data-aos="fade-up">
             <form action="">
                 <h1>Never miss an offer</h1>
                 <p>Subscribe and be the first to receive our exclusive offers.</p> <br />

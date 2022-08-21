@@ -35,7 +35,7 @@ function Destinations() {
           </div>
         </div>
 
-        <div className="card" data-aos="fade-left">
+        <div className="card" data-aos="fade-right">
           <div className="tops">
             <img src='/enugu.jpg' alt="" />
           </div>

@@ -17,7 +17,7 @@ const Container = styled.div`
     height: 100vh;
   }
   width: 100%;
-  height: 85vh;
+  height: 100vh;
   background: linear-gradient(90deg, #d30d0d65 0%, #d30d0d30 32%, #d30d0d 100%),url(${home});
   background-size: cover;
   -webkit-background-size:cover;
@@ -25,5 +25,6 @@ const Container = styled.div`
   -o-background-size:cover;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   padding: 5%;
 `

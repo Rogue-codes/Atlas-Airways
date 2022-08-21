@@ -25,7 +25,7 @@ function LetFly() {
                     <button>Book now</button>
                 </div>
             </div>
-            <div className="item2" data-aos="fade-left">
+            <div className="item2" data-aos="zoom-in">
                 <div className="left">
                     <img src="/zuma.jpg" alt="" />
                 </div>
@@ -36,7 +36,7 @@ function LetFly() {
                 </div>
             </div>
 
-            <div className="item3" data-aos="fade-left">
+            <div className="item3" data-aos="zoom-in">
                 <div className="left">
                     <img src="/water.webp" alt="" />
                 </div>
@@ -47,7 +47,7 @@ function LetFly() {
                 </div>
             </div>
 
-            <div className="item4" data-aos="fade-left">
+            <div className="item4" data-aos="zoom-in">
                 <div className="left">
                     <img src="/hotel.webp" alt="" />
                 </div>

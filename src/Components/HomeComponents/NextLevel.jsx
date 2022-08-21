@@ -14,7 +14,7 @@ function NextLevel() {
         <h2>Next level flying....</h2>
       </div>
       <div className="bottom">
-        <div className="card" data-aos="fade-right">
+        <div className="card" data-aos="fade-up">
           <div className="tops">
             <img src='/economy.webp' alt="" />
           </div>
@@ -25,7 +25,7 @@ function NextLevel() {
           </div>
         </div>
         
-        <div className="card" data-aos="fade-left">
+        <div className="card" data-aos="fade-up">
           <div className="tops">
             <img src='/fisrt.webp' alt="" />
           </div>
@@ -46,7 +46,7 @@ export default NextLevel
 const Container = styled.div`
   width: 100%;
   height: auto;
-  font-family: 'Alumni Sans Pinstripe', sans-serif;
+  font-family: 'Spectral', serif;
   margin-top: 5%;
   .top{
     width: 100%;
