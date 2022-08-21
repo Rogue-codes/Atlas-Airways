@@ -8,6 +8,7 @@ import LetFly from '../HomeComponents/LetFly'
 import Nav from '../HomeComponents/Nav'
 import NewsLetter from '../HomeComponents/NewsLetter'
 import NextLevel from '../HomeComponents/NextLevel'
+import Slider from '../HomeComponents/Slider'
 import Tab from '../HomeComponents/Tabsection/Tab'
 
 function Home() {
@@ -22,6 +23,7 @@ function Home() {
       <LetFly/>
       <NewsLetter/>
       <Footer/>
+      <Slider/>
     </Container>
   )
 }
@@ -32,4 +34,5 @@ const Container = styled.div`
   width: 100%;
   height: 100vh;
   font-family: 'Spectral', serif;
+  position: relative;
 `
